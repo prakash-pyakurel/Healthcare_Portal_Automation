@@ -2,7 +2,7 @@
 
 ## 🔍 Project Overview
 This project simulates automation for a legacy healthcare portal that lacks modern APIs.  
-It demonstrates secure, auditable automation to extract claim data and expose it through a secure API.
+It demonstrates secure, auditable automation to extract claims data and expose it through a secure API.
 
 The goal is to show how legacy, manual processes in healthcare can be modernized with automation and APIs, aligning with cloud migration and secure data handling standards.
 

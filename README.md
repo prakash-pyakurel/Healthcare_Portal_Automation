@@ -1,32 +1,29 @@
-🏥 Healthcare Portal Automation (Selenium + FastAPI + SQLite)
+# 🏥 Healthcare Portal Automation (Selenium + FastAPI + SQLite)
 
-🔍 Project Overview
-This project simulates automation for a legacy healthcare portal that lacks modern APIs.
+## 🔍 Project Overview
+This project simulates automation for a legacy healthcare portal that lacks modern APIs.  
 It demonstrates secure, auditable automation to extract claim data and expose it through a secure API.
 
-The goal is to show how legacy, manual processes in healthcare can be modernized with automation and APIs — aligning with cloud migration and secure data handling standards.
+The goal is to show how legacy, manual processes in healthcare can be modernized with automation and APIs, aligning with cloud migration and secure data handling standards.
 
+---
 
-🛠️ Technology Stack
-Python 3.11+
+## 🛠️ Technology Stack
+- Python 3.11+
+- **FastAPI** (API Framework)
+- **Selenium** (Web Automation)
+- **SQLite** (Lightweight Database)
+- **SQLAlchemy** (ORM)
+- Logging (Audit-Focused)
 
-FastAPI (API Framework)
+---
 
-Selenium (Web Automation)
-
-SQLite (Lightweight Database)
-
-SQLAlchemy (ORM)
-
-Logging (Audit-Focused)
-
-
-📊 Architecture Overview
+## 📊 Architecture Overview
 Below is the architecture for this project showing data flow from a mock legacy portal to SQLite storage.
 ![Architecture Diagram](./project_architecture.png)
 
 
-📂 Project Structure
+## 📂 Project Structure
 
 healthcare_portal_automation/
 │
@@ -44,7 +41,7 @@ healthcare_portal_automation/
     └── api_access.log     # Audit logging for API access
 
 
-🚀 How It Works
+## 🚀 How It Works
 ✅ Step 1: Simulate Legacy Portal Login
 Opens mock_portal/index.html
 Logs in and scrapes patient claims via Selenium.
@@ -55,13 +52,13 @@ GET /claims: Retrieve claims data (requires API Key)
 POST /trigger-scrape: Manually trigger Selenium to extract & store new data in SQLite
 
 
-🔐 API Key Security Example
+## 🔐 API Key Security Example
 All endpoints require a valid API Key via headers:
 Header: X-API-Key
 Value: secureapikey123
 
 
-📊 Sample Data (claims_data.db)
+## 📊 Sample Data (claims_data.db)
 After running /trigger-scrape, data is stored like this:
 
 id	patient_id	name	service_date	billing_code
@@ -69,7 +66,7 @@ id	patient_id	name	service_date	billing_code
 2	1002	Robert Smith	2025-07-18	Y456
 
 
-🔄 Automation Concept
+## 🔄 Automation Concept
 This simulates what an RPA tool like UIPath might trigger:
 
 /trigger-scrape: acts as the automation entry point
@@ -79,7 +76,7 @@ Stores data securely
 Ready to integrate with ETL, reporting, or warehousing tools
 
 
-🎯 Key Concepts Demonstrated
+## 🎯 Key Concepts Demonstrated
 ✅ Secure API Development
 
 ✅ Selenium Automation for Non-API Systems
@@ -91,7 +88,7 @@ Ready to integrate with ETL, reporting, or warehousing tools
 ✅ Flexible Data Storage (SQLite, adaptable to SQL Server)
 
 
-💡 Why This Project?
+## 💡 Why This Project?
 This showcases how I approach:
 
 Data Integration in Healthcare

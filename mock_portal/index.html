@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mock Healthcare Claims Portal</title>
+</head>
+<body>
+    <h1>Welcome to Mock Healthcare Claims Portal</h1>
+
+    <form id="loginForm">
+        <h2>Login</h2>
+        <label>Username: <input type="text" name="username" value="testuser"></label><br><br>
+        <label>Password: <input type="password" name="password" value="password123"></label><br><br>
+        <button type="button" onclick="showClaims()">Login</button>
+    </form>
+
+    <div id="claimsData" style="display:none; margin-top:20px;">
+        <h2>Patient Claims</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>Name</th>
+                    <th>Service Date</th>
+                    <th>Billing Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Prakash Pyakurel</td>
+                    <td>2025-07-15</td>
+                    <td>X123</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Robert Smith</td>
+                    <td>2025-07-18</td>
+                    <td>Y456</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function showClaims() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('claimsData').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

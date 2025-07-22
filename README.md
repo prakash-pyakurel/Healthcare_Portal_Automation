@@ -108,3 +108,12 @@ Automation and Secure API Practices
 Cloud-Ready, Audit-Friendly Solutions
 
 Let me know if you'd like me to suggest a clean .gitignore file for this too!
+
+---
+
+## 👨‍💻 Author
+
+**Prakash Pyakurel**  
+📧 [prakashpyakurel@outlook.com](mailto:prakashpyakurel@outlook.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/prakashpyakurel/)  
+🔗 [GitHub](https://github.com/prakash-pyakurel)

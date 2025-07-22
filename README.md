@@ -20,6 +20,7 @@ The goal is to show how legacy, manual processes in healthcare can be modernized
 
 ## 📊 Architecture Overview
 Below is the architecture for this project showing data flow from a mock legacy portal to SQLite storage.
+
 ![Architecture Diagram](./project_architecture.png)
 
 

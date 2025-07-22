@@ -4,13 +4,13 @@ from fastapi.security.api_key import APIKeyHeader
 from selenium_scraper import extract_claims_data
 import logging 
 
-# This is a Setup Logging
+# Setup for Logging
 logging.basicConfig(filename='./logs/api_access.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# Create FastAPI app
+# Creating FastAPI app
 app = FastAPI()
 
-# Security - Simple API Key for Practice Only 
+# Security - Simple API Key for Practice/Demo Only 
 API_KEY = "secureapikey123"
 api_key_header = APIKeyHeader(name="X-API-Key")
 
@@ -31,9 +31,9 @@ def get_claims_data():
 @app.post("/trigger-scrape", dependencies=[Depends(verify_api_key)])
 def trigger_scrape():
     logging.info("Triggered manual data scrape and storage.")
-    data = extract_claims_data()   # This runs Selenium to get the latest data
+    data = extract_claims_data()   # This will runs Selenium to get the latest data from the portal
 
-    db = SessionLocal()            # This opens a connection to your DB (SQLite or SQL Server)
+    db = SessionLocal()            # This opens a connection to your DB (We are using SQLite for Practice/Demo only)
     for claim in data:
         db_claim = Claim(
             patient_id=claim["Patient ID"],

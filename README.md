@@ -23,6 +23,7 @@ Below is the architecture for this project showing data flow from a mock legacy 
 
 ![Architecture Diagram](./project_architecture.png)
 
+---
 
 ## 📂 Project Structure
 
@@ -41,6 +42,7 @@ healthcare_portal_automation/
 └── logs/
     └── api_access.log     # Audit logging for API access
 
+---
 
 ## 🚀 How It Works
 ✅ Step 1: Simulate Legacy Portal Login
@@ -52,12 +54,14 @@ GET /claims: Retrieve claims data (requires API Key)
 
 POST /trigger-scrape: Manually trigger Selenium to extract & store new data in SQLite
 
+---
 
 ## 🔐 API Key Security Example
 All endpoints require a valid API Key via headers:
 Header: X-API-Key
 Value: secureapikey123
 
+---
 
 ## 📊 Sample Data (claims_data.db)
 After running /trigger-scrape, data is stored like this:
@@ -66,6 +70,7 @@ id	patient_id	name	service_date	billing_code
 1	1001	Prakash Pyakurel	2025-07-15	X123
 2	1002	Robert Smith	2025-07-18	Y456
 
+---
 
 ## 🔄 Automation Concept
 This simulates what an RPA tool like UIPath might trigger:
@@ -76,6 +81,7 @@ Stores data securely
 
 Ready to integrate with ETL, reporting, or warehousing tools
 
+---
 
 ## 🎯 Key Concepts Demonstrated
 ✅ Secure API Development
@@ -88,6 +94,7 @@ Ready to integrate with ETL, reporting, or warehousing tools
 
 ✅ Flexible Data Storage (SQLite, adaptable to SQL Server)
 
+---
 
 ## 💡 Why This Project?
 This showcases how I approach:

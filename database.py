@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-# SQLite connection (local file-based DB)
+# SQLite connection (this is a local file-based DB)
 DATABASE_URL = "sqlite:///./claims_data.db"
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})

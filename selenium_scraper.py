@@ -8,17 +8,17 @@ def extract_claims_data():
     service = Service('./chromedriver.exe')
     driver = webdriver.Chrome(service=service)
 
-    # Open your local HTML file
+    # This will open the local HTML file
     driver.get("file:///C:/Users/PRAKA/OneDrive/Desktop/healthcare_portal_automation/mock_portal/index.html")
 
-    # Simulate clicking the login button
+    # This will simulate clicking the login button
     login_button = driver.find_element(By.TAG_NAME, 'button')
     login_button.click()
 
-    # Wait for the page to load claims data
+    # This Wait for the page to load claims data
     time.sleep(1)
 
-    # Extract table data
+    # This will extract table data
     claims_data = []
     rows = driver.find_elements(By.XPATH, '//table/tbody/tr')
     for row in rows:
@@ -31,10 +31,10 @@ def extract_claims_data():
         }
         claims_data.append(claim)
 
-    # Close the browser
+    # This will close the browser
     driver.quit()
 
-    # Return the extracted data
+    # This will return the extracted data
     return claims_data
 
 

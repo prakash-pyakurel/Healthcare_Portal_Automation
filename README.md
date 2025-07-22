@@ -100,14 +100,9 @@ Ready to integrate with ETL, reporting, or warehousing tools
 This showcases how I approach:
 
 Data Integration in Healthcare
-
 Modernizing Legacy Systems
-
 Automation and Secure API Practices
-
 Cloud-Ready, Audit-Friendly Solutions
-
-Let me know if you'd like me to suggest a clean .gitignore file for this too!
 
 ---
 

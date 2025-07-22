@@ -99,10 +99,7 @@ Ready to integrate with ETL, reporting, or warehousing tools
 ## 💡 Why This Project?
 This showcases how I approach:
 
-Data Integration in Healthcare
-Modernizing Legacy Systems
-Automation and Secure API Practices
-Cloud-Ready, Audit-Friendly Solutions
+Data Integration in Healthcare, Modernizing Legacy Systems, Automation and Secure API Practices, Cloud-Ready, and Audit-Friendly Solutions
 
 ---
 
